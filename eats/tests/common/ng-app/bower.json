@@ -1,0 +1,14 @@
+{
+  "name": "web-stack",
+  "description": "A starter project for AngularJS",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Basic Web Development Stack",
+  "license": "MIT",
+  "dependencies": {
+    "html5-boilerplate": "~4.3.0",
+    "jquery": "1.x",
+    "lodash": "3.x",
+    "angular": "1.4.x"
+  }
+}

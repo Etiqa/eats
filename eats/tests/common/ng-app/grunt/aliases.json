@@ -1,0 +1,4 @@
+{
+  "load_scripts": ["wiredep", "includeSource"],
+  "develop":  ["load_scripts"]
+}

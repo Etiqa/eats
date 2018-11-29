@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="ngTestForm"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8" ng-app="ngTestForm"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9" ng-app="ngTestForm"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="ngTestForm"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Page Test Form</title>
+        <meta name="description" content="Page Test Form Description" />
+        <meta name="keywords" content="">
+
+        <!-- ICONS -->
+        <link rel="icon" href="" />
+        <link rel="apple-touch-icon" href="" />
+
+        <!-- FACEBOOK METAs -->
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <!-- VENDOR CSS -->
+        <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+        <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+
+        <!--  MODERNIZR -->
+        <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+        <![endif]-->
+
+        <style>
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+            }
+            #main-wrapper {
+                padding: 50px;
+            }
+            .test-element {
+                padding: 10px 0;
+                border-bottom: 1px dotted #ccc;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="main-wrapper" class="container" ng-controller="PageController as pageCtrl" data-ng-cloak>
+            <h1>Angular Test Form</h1>
+
+            <form novalidate>
+                <div class="test-element">
+                    <input type="text" ng-model="pageCtrl.textField" />
+                    Value: <span id="textValue">{{pageCtrl.textField}}</span>
+                </div>
+                <div class="test-element">
+                    <input type="checkbox" ng-model="pageCtrl.checkField" />
+                    Value: <span id="checkValue">{{pageCtrl.checkField}}</span>
+                </div>
+
+                <div class="test-element">
+                    <input type="radio" value='yes' ng-model="pageCtrl.radioField" />
+                    <input type="radio" value='no' ng-model="pageCtrl.radioField" />
+                    Value: <span id="radioValue">{{pageCtrl.radioField}}</span>
+                </div>
+
+                <div class="test-element">
+                    <input type="password" ng-model="pageCtrl.passwdField" />
+                    Value: <span id="passwdValue">{{pageCtrl.passwdField}}</span>
+                </div>
+
+                <div class="test-element">
+                    <select ng-model="pageCtrl.selectField"
+                            ng-options="option.value for option in pageCtrl.selectOptions track by option.id">
+
+                    </select>
+                    Value: <span id="selectValue">{{pageCtrl.selectField}}</span>
+                </div>
+
+            </form>
+        </div>
+
+
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/lodash/lodash.js"></script>
+        <script src="../bower_components/angular/angular.js"></script>
+        <!-- endbower -->
+
+        <!-- include: "type": "js", "files": "src/**/**.js,!src/**/*.spec.js" -->
+        <script src="src/app.js"></script>
+        <!-- /include -->
+
+    </body>
+</html>

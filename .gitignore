@@ -1,0 +1,8 @@
+/eats.egg-info
+/build
+/eats/tests/common/ng-app/node_modules
+/dist
+.idea
+eats.iml
+*.pyc
+test_reports/*.xml

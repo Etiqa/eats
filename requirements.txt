@@ -15,7 +15,7 @@ PyHamcrest==1.8.5
 pyparsing==2.2.0
 etiqa-pytractor==0.2.1.1
 selenium==3.6.0
-six==1.10.0
+six>=1.10.0
 traceback2==1.4.0
 unittest-xml-reporting==2.1.0
 wheel

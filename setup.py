@@ -27,7 +27,7 @@ setup(
     install_requires=[
         "selenium ~= 3.6",
         "etiqa-pytractor == 0.2.1.1",
-        "etiqa-behave == 1.2.6.0",
+        "behave == 1.2.6",
         "pyhamcrest == 1.8.5",
         "beautifulsoup4",
         "Pillow",

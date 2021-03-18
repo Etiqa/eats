@@ -10,7 +10,7 @@ olefile==0.44
 packaging==16.8
 parse==1.8.0
 parse-type==0.3.4
-Pillow==4.1.1
+Pillow==8.1.1
 PyHamcrest==1.8.5
 pyparsing==2.2.0
 etiqa-pytractor==0.2.1.1

@@ -3,7 +3,7 @@ Appium-Python-Client==0.26
 beautifulsoup4==4.6.0
 etiqa-behave==1.2.6.0
 enum34==1.1.6
-future==0.16.0
+future==0.18.3
 linecache2==1.0.0
 lxml==3.8.0
 olefile==0.44
